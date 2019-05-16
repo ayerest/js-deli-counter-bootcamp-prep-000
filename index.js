@@ -15,7 +15,11 @@ function currentLine(deli_line) {
   let string = "The line is currently:"
   if (deli_line.length > 0) {
     for (var i = 0; i < deli_line.length; i++) {
+      if (i == deli_line.length - 1) {
+        string += ` ${i + 1}. ${deli_line[i]}`
+      } else {
       string += ` ${i + 1}. ${deli_line[i]},`
+    }
     }
   } else {
     string = "The line is currently empty.";
