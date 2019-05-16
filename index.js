@@ -10,3 +10,11 @@ function nowServing(deli_line) {
     return "There is nobody waiting to be served!";
   }
 }
+
+function currentLine(deli_line) {
+  if (deli_line.length > 0) {
+    
+  } else {
+    return "The line is currently empty.";
+  }
+}
